@@ -10,31 +10,26 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace PracticaLayouts
 {
     /// <summary>
-    /// Lógica de interacción para MainWindow.xaml
+    /// Lógica de interacción para winVarios.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class winVarios : Window
     {
-        public MainWindow()
+        public winVarios()
         {
             InitializeComponent();
         }
 
-        private void btTab_Click(object sender, RoutedEventArgs e)
+        private void bt1_Click(object sender, RoutedEventArgs e)
         {
-            Window Tab = new winTabControl();
-            Tab.ShowDialog();
-        }
-
-        private void btStack_Click(object sender, RoutedEventArgs e)
-        {
-            Window Wrap = new winVarios();
-            Wrap.ShowDialog();
+            if (wrapOrienta.Orientation == Orientation.Horizontal)
+                wrapOrienta.Orientation = Orientation.Vertical;
+            else
+                wrapOrienta.Orientation = Orientation.Horizontal;
         }
     }
 }
