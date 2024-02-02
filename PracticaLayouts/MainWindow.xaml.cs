@@ -36,5 +36,16 @@ namespace PracticaLayouts
             Window Wrap = new winVarios();
             Wrap.ShowDialog();
         }
+
+        private void btDock_Click(object sender, RoutedEventArgs e)
+        {
+            Window Dock = new winDockPanel();
+            Dock.ShowDialog();
+        }
+
+        private void btSalir_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

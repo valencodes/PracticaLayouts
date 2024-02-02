@@ -13,9 +13,18 @@
             <Button Content="Boton" HorizontalAlignment="Left" Margin="53,102,0,0" VerticalAlignment="Top" Height="23" Width="85"/>
         </Grid>
         <Grid Name="GridColumnas" Background="Yellow" Margin="80,250,80,64" Grid.Row="2" Grid.Column="3">
-            <Button Content="Boton" HorizontalAlignment="Left" VerticalAlignment="Top" Height="23" Width="85" Margin="10,93,0,0" Grid.Row="1" Grid.Column="0"/>
-            <Button Content="Boton" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="23" Width="85" Margin="201,43,0,0" Grid.Column="2" Grid.Row="1"/>
-            <Label x:Name="label4" Content="Grid Con Columnas" Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="46,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button Content="Boton3" HorizontalAlignment="Left" VerticalAlignment="Top" Height="23" Width="85"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"  Margin="35,25,0,0" />
+            <Button Content="Boton4" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="23" Width="85"  Grid.Column="2" Grid.Row="1"/>
+            <Label x:Name="label4" Content="Grid Con Columnas" Grid.ColumnSpan="3" HorizontalAlignment="Left"  VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
         </Grid>
     </Grid>
 </Window>

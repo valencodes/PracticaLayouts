@@ -1,0 +1,18 @@
+﻿<Window x:Class="PracticaLayouts.winDockPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PracticaLayouts"
+        mc:Ignorable="d"
+        Title="winDockPanel" Height="440" Width="594" Loaded="Window_Loaded">
+    <Grid>
+        <DockPanel LastChildFill="False" Background="AliceBlue" Margin="32,26,10,10">
+            <Label Name="lbNombre" Content="Nombre" HorizontalAlignment="Center" DockPanel.Dock="Top" FontSize="18" />            <Label Name="lbNumfoto" Content="Numero" HorizontalAlignment="Center"  DockPanel.Dock="Bottom" FontSize="18" Height="40" />
+            <Button x:Name="btAnterior" DockPanel.Dock="Left" Background ="CornflowerBlue" Width="50" Height="50" FontFamily="Webdings" FontSize="20" FontWeight="Bold" Foreground="White" Margin="10,0,0,0" Click="btAnterior_Click">
+                9 <!--Combinado con Fuente webdings muestra símbolo desplazamiento izquierda -->
+            </Button>            <Button x:Name="btSiguiente" DockPanel.Dock="Right" Background ="CornflowerBlue" Width="50" Height="50" FontFamily="Webdings" FontSize="20" FontWeight="Bold" Foreground="White" Margin="10,0,0,0" Click="btSiguiente_Click">            : <!--Combinado con Fuente webdings muestra símbolo desplazamiento izquierda -->
+            </Button>            <Image x:Name="imgMostrar" Source="visor.jpg" Margin="5,5" Height="246" Width="388" Stretch="Fill" StretchDirection="Both" />        </DockPanel>
+
+    </Grid>
+</Window>
