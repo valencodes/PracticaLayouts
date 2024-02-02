@@ -58,6 +58,9 @@
     <Compile Include="winGrid.xaml.cs">
       <DependentUpon>winGrid.xaml</DependentUpon>
     </Compile>
+    <Compile Include="winTabControl.xaml.cs">
+      <DependentUpon>winTabControl.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -71,6 +74,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="winGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="winTabControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -100,6 +107,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cochesypelis\alien.jpg" />
+    <Resource Include="cochesypelis\audi.jpg" />
+    <Resource Include="cochesypelis\beetle.jpg" />
+    <Resource Include="cochesypelis\bladerunner.jpg" />
+    <Resource Include="cochesypelis\jaguar.jpg" />
+    <Resource Include="cochesypelis\starwars.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="audi.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
