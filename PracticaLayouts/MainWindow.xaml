@@ -8,11 +8,10 @@
         Title="MainWindow" Height="353" Width="585">
     <Grid Name="Grid1" Background="LightGoldenrodYellow">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="249*"/>
-            <ColumnDefinition Width="151*"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Label Content="Práctica para Estudiar los Diferentes Paneles de WPF para Layouts" HorizontalAlignment="Left" Margin="34,10,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="42" Width="529" FontWeight="Bold" FontSize="16"/>
-        <Button x:Name="btGrid" Content="PanelGrid" HorizontalAlignment="Left" Margin="246,76,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label Content="Práctica para Estudiar los Diferentes Paneles de WPF para Layouts" HorizontalAlignment="Left" Margin="34,10,0,0" VerticalAlignment="Top" Height="42" Width="529" FontWeight="Bold" FontSize="16"/>
+        <Button x:Name="btGrid" Content="Panel Grid" HorizontalAlignment="Left" Margin="246,76,0,0" VerticalAlignment="Top" Width="105"/>
         <Button x:Name="btStack" Content="Stack y Wrap Panel" HorizontalAlignment="Left" Margin="230,111,0,0" VerticalAlignment="Top" Width="136"/>
         <Button x:Name="btTab" Content="TabControls" HorizontalAlignment="Left" Margin="246,149,0,0" VerticalAlignment="Top" Width="105"/>
         <Button x:Name="btDock" Content="DockPanel" HorizontalAlignment="Left" Margin="246,183,0,0" VerticalAlignment="Top" Width="105"/>
