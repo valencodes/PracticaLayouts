@@ -24,5 +24,11 @@ namespace PracticaLayouts
         {
             InitializeComponent();
         }
+
+        private void btTab_Click(object sender, RoutedEventArgs e)
+        {
+            Window Tab = new winTabControl();
+            Tab.ShowDialog();
+        }
     }
 }

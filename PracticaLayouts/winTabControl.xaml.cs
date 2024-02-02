@@ -38,14 +38,14 @@ namespace PracticaLayouts
             switch (misender.Name)
             { // Escogemos la imagen
                 case "rbCochazo":
-                    laimagen = "audi.jpg";
+                    laimagen = "/audi.jpg";
                     //laimagen = @"cochesypelis\audi.jpg"; //Si está en carpeta así 
                     break;
                 case "rbAsequible":
-                    laimagen = "jaguar.jpg";
+                    laimagen = "/jaguar.jpg";
                     break;
                 case "rbAceptable":
-                    laimagen = "beetle.jpg";
+                    laimagen = "/beetle.jpg";
                     break;
             }
             try
@@ -57,6 +57,37 @@ namespace PracticaLayouts
             {
                 Console.WriteLine(err.Message);
             }
+      
+
         }
+
+        private void cbPelis_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            string peli = "";
+            switch (cbPelis.SelectedIndex) // Según índice ítem seleccionamos
+            {
+                case 0:
+                    peli = "/starwars"; // Asignamos nombre de archivo 
+                                       //peli = @"\cochesypelis\starwars"; // Si está en carpeta así 
+                    break;
+                case 1:
+                    peli = "/alien";
+                    break;
+                case 2:
+                    peli = "/bladerunner";
+                    break;
+            }
+            try
+            {
+                imgPelis.Source = //asignamos archivo de imagen a mostrar 
+                new BitmapImage(new Uri(peli + ".jpg", UriKind.Relative));
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine(err.Message);
+            }
+        }
+
+        
     }
 }

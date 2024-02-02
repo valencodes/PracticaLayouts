@@ -109,12 +109,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="cochesypelis\alien.jpg" />
-    <Resource Include="cochesypelis\audi.jpg" />
-    <Resource Include="cochesypelis\beetle.jpg" />
-    <Resource Include="cochesypelis\bladerunner.jpg" />
-    <Resource Include="cochesypelis\jaguar.jpg" />
-    <Resource Include="cochesypelis\starwars.jpg" />
+    <Resource Include="alien.jpg" />
+    <Resource Include="beetle.jpg" />
+    <Resource Include="bladerunner.jpg" />
+    <Resource Include="jaguar.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="audi.jpg" />

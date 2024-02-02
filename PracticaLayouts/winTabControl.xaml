@@ -15,16 +15,16 @@
         </Grid.Background>
         <TabControl Margin="110,34,110,62">
             <TabItem Header="Coches">
-                <Grid Background="#FFE5E5E5" Grid.Column="2">
+                <Grid Background="#FFE5E5E5">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="2*"/>
                     </Grid.ColumnDefinitions>
-                    <RadioButton x:Name="rbCochazo" Content="Cochazo" Margin="20,77,20,214"/>
-                    <RadioButton x:Name="rbAsequible" Content="Asequible" Margin="20,126,20,165"/>
-                    <RadioButton x:Name="rbAceptable" Content="Aceptable" Margin="20,179,20,111"/>
-                    <Label Content="¿Cuál es el tuyo?" Margin="20,31,10,250" FontWeight="Bold"/>
-                    <Image Grid.Column="1" HorizontalAlignment="Center" Height="155" Margin="0,62,0,0" VerticalAlignment="Top" Width="363" Source="/audi.jpg"/>
+                    <RadioButton VerticalAlignment="Top" Grid.Column="0" x:Name="rbCochazo" Content="Cochazo"  Checked="rbCochazo_Checked" Margin="20,82,50,0"/>
+                    <Label Grid.Column="0" Content="¿Cuál es el tuyo?"  FontWeight="Bold" Margin="20,33,45,0" Height="33" VerticalAlignment="Top"/>
+                    <Image x:Name="imgCoche" Grid.Column="1" HorizontalAlignment="Center" Height="155" Margin="0,62,0,0" VerticalAlignment="Top" Width="363" Source="/audi.jpg"/>
+                    <RadioButton VerticalAlignment="Top" Grid.Column="0" x:Name="rbAsequible" Content="Asequible"  Checked="rbCochazo_Checked" Margin="20,121,50,0"/>
+                    <RadioButton VerticalAlignment="Top" Grid.Column="0" x:Name="rbAceptable" Content="Aceptable"  Checked="rbCochazo_Checked" Margin="20,155,50,0"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Pelis">
@@ -34,14 +34,13 @@
                         <ColumnDefinition Width="2*"/>
                     </Grid.ColumnDefinitions>
 
-                    <Label Content="¿Cuál te gusta más? " Margin="10,102,49,182" FontWeight="Bold"/>
-                    <ComboBox Name="cbPelis" HorizontalAlignment="Left" Margin="10,133,0,0" VerticalAlignment="Top" Width="156">
+                    <Label Content="¿Cuál te gusta más? " Margin="10,102,49,0" FontWeight="Bold" Height="26" VerticalAlignment="Top"/>
+                    <ComboBox Name="cbPelis" HorizontalAlignment="Left" Margin="10,133,0,0" VerticalAlignment="Top" Width="156" SelectionChanged="cbPelis_SelectionChanged">
                         <ComboBoxItem Content="La Guerra de las Galaxias"/>
                         <ComboBoxItem Content="Alien: El 8º pasajero"/>
                         <ComboBoxItem Content="Blade Runner"/>
                     </ComboBox>
-                    <Image Name="imPelis" Grid.Column="1" HorizontalAlignment="Left" Height="246" Margin="119,0,0,0" VerticalAlignment="Center" Width="163" Source="/starwars.jpg"/>
-
+                    <Image x:Name="imgPelis" Grid.Column="1" HorizontalAlignment="Left" Height="246" Margin="119,0,0,0" VerticalAlignment="Center" Width="163" Source="starwars.jpg"/>
 
                 </Grid>
             </TabItem>
