@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MultiVentana;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -46,6 +47,18 @@ namespace PracticaLayouts
         private void btSalir_Click(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void btAcercade_Click(object sender, RoutedEventArgs e)
+        {
+            Window Acerca = new vtAcercade();
+            Acerca.ShowDialog();
+        }
+
+        private void btGrid_Click(object sender, RoutedEventArgs e)
+        {
+            Window Grid = new winGrid();
+            Grid.ShowDialog();
         }
     }
 }

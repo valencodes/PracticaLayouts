@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="vtAcercade.xaml.cs">
+      <DependentUpon>vtAcercade.xaml</DependentUpon>
+    </Compile>
     <Compile Include="winDockPanel.xaml.cs">
       <DependentUpon>winDockPanel.xaml</DependentUpon>
     </Compile>
@@ -79,6 +82,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="vtAcercade.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="winDockPanel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -136,6 +143,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="visor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="DVGC2QDAM.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
