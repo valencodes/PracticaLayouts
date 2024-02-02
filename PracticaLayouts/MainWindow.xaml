@@ -1,0 +1,23 @@
+﻿<Window x:Class="PracticaLayouts.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PracticaLayouts"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="353" Width="585">
+    <Grid Name="Grid1" Background="LightGoldenrodYellow">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="249*"/>
+            <ColumnDefinition Width="151*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Práctica para Estudiar los Diferentes Paneles de WPF para Layouts" HorizontalAlignment="Left" Margin="34,10,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="42" Width="529" FontWeight="Bold" FontSize="16"/>
+        <Button x:Name="btGrid" Content="PanelGrid" HorizontalAlignment="Left" Margin="246,76,0,0" VerticalAlignment="Top" Width="105"/>
+        <Button x:Name="btStack" Content="Stack y Wrap Panel" HorizontalAlignment="Left" Margin="230,111,0,0" VerticalAlignment="Top" Width="136"/>
+        <Button x:Name="btTab" Content="TabControls" HorizontalAlignment="Left" Margin="246,149,0,0" VerticalAlignment="Top" Width="105"/>
+        <Button x:Name="btDock" Content="DockPanel" HorizontalAlignment="Left" Margin="246,183,0,0" VerticalAlignment="Top" Width="105"/>
+        <Button x:Name="btAcercade" Content="Acerca de" HorizontalAlignment="Left" Margin="246,218,0,0" VerticalAlignment="Top" Width="105"/>
+        <Button x:Name="btSalir" Content="Salir" HorizontalAlignment="Left" Margin="246,253,0,0" VerticalAlignment="Top" Width="105"/>
+
+    </Grid>
+</Window>
